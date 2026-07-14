@@ -134,34 +134,41 @@ semantiz/
 
 ## Roadmap
 
-### Phase 1 — Core Engine *(Months 1–2)*
-- [ ] CrawlerNode: seed URL fetching, HTML extraction, content normalization
-- [ ] EmbeddingService: SBERT integration, batch embedding pipeline
-- [ ] SemanticIndex: FAISS flat index, SQLite metadata store
-- [ ] IPFSStorageAdapter: content add, CID retrieval, pin management
-- [ ] SearchAPI: `POST /api/v1/search` with vector similarity ranking
-- [ ] Basic test suite and CI pipeline
+### Phase 1 — Core Engine *(Months 1–2)* ✅ Complete
+- [x] CrawlerNode: seed URL fetching, HTML extraction, content normalization
+- [x] EmbeddingService: SBERT integration, batch embedding pipeline
+- [x] SemanticIndex: FAISS flat index, SQLite metadata store
+- [x] IPFSStorageAdapter: content add, CID retrieval, pin management
+- [x] SearchAPI: `POST /api/v1/search` with vector similarity ranking
+- [x] Basic test suite and CI pipeline
 
-### Phase 2 — Network + Consensus *(Months 3–5)*
+### Phase 2 — Network + Consensus *(Months 3–5)* 🔄 In Progress
 - [ ] libp2p node: Kademlia DHT, Gossipsub, peer discovery
 - [ ] Semantic Overlay Network: k-means trie topology, chain-hop routing
 - [ ] IPNI-compatible advertisement chain for index distribution
-- [ ] PoC smart contract (Solidity) deployed on testnet
-- [ ] Node reputation system: coverage, freshness, accuracy, availability scoring
-- [ ] Slashing mechanism for malicious/lazy nodes
+- [x] PoC smart contract (Solidity): NodeRegistry, ProofOfContribution, RewardDistributor — code written
+- [x] Node reputation system: coverage, freshness, accuracy, availability scoring
+- [x] Slashing mechanism for malicious/lazy nodes
 
-### Phase 3 — User-Facing *(Months 6–7)*
-- [ ] Web UI: React search dashboard with result cards
-- [ ] REST API: full public developer API with OpenAPI docs
-- [ ] Browser extension: background indexing via Service Worker
-- [ ] Network statistics dashboard
-- [ ] Mainnet deployment preparation
+### Phase 3 — User-Facing *(Months 6–7)* 🔄 In Progress
+- [x] Web UI: React search dashboard with result cards
+- [x] REST API: full public developer API with OpenAPI docs
+- [x] Browser extension: background indexing via Service Worker
+- [ ] Network statistics dashboard (full)
+- [ ] Testnet deployment + public demo
 
-### Phase 4 — Scale *(Months 8+)*
+### Phase 4 — Tokenomics *(Months 8–10)*
+- [ ] ERC-20 token `$SMZ`: supply model, vesting schedule, emissions curve
+- [ ] Liquidity bootstrapping: initial SMZ/ETH pool on Uniswap V3
+- [ ] Treasury DAO: on-chain governance for reward parameter changes
+- [ ] Validator staking: stake SMZ to earn validation rights
+- [ ] Token-gated indexer tiers: higher stake = higher reward weight
+
+### Phase 5 — Scale *(Months 11+)*
 - [ ] Index sharding across heterogeneous node tiers
 - [ ] Browser-tier WebRTC peer integration (lightweight nodes)
-- [ ] DAO governance layer
 - [ ] Cross-chain reward bridging
+- [ ] OWI bootstrap corpus integration (9.14B URLs seed)
 
 ---
 
